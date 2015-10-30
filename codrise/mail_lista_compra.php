@@ -31,7 +31,6 @@ border-radius: 5px;
 
 </head> 
 <body> 
-<img src="http://www.ankarentacar.pe/images/clientes/logo_codrise.jpg" width="200" height="150">
 <h1>Lista de Compra Nueva - Modulo de Reservas Codrise</h1> 
 
 <p> 
