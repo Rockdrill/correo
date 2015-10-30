@@ -8,9 +8,9 @@ $cuerpo ='
 <title>Lista de Compra</title> 
 </head> 
 <body> 
-<h1>Listad de Compra Nueva</h1> 
+<h1>Lista de Compra Nueva</h1> 
 <p> 
-<b>Se acaba de  Generar  una nueva lista de compra.
+<b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra.
 </p> 
 </body> 
 </html> 
