@@ -31,7 +31,9 @@ border-radius: 5px;
 
 </head> 
 <body> 
-<h1>Lista de Compra Nueva</h1> 
+<img src="http://www.ankarentacar.pe/images/clientes/logo_codrise.jpg" width="200" height="150">
+<h1>Lista de Compra Nueva - Modulo de Reservas Codrise</h1> 
+
 <p> 
 <b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra.
 </p> 
