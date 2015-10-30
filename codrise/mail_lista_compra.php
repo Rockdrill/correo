@@ -1,4 +1,5 @@
 <?php 
+$tipo=$_GET['tipo'];
 $destinatario ="luis.claudio@codrise.com";
 $remitente    ="luis.claudio@overprimegroup.com";
 $asunto       = "Lista de Compra"; 
@@ -41,6 +42,6 @@ $headers .= "Cc: soporte@rockdrillgroup.com\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.27/reserva/pages/reserva-kit?tipo=$_GET[tipo]')
+header('Location: http://192.168.1.27/reserva/pages/reserva-kit?tipo=$tipo')
 
 ?>
