@@ -41,6 +41,6 @@ $headers .= "Cc: soporte@rockdrillgroup.com\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.27/reserva/home')
+header('Location: http://192.168.1.27/reserva/pages/reserva-kit?tipo=$_GET[tipo]')
 
 ?>
