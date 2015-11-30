@@ -1,6 +1,6 @@
 <?php 
 $destinatario ="manuel.matos@codrise.com";
-$remitente    ="reservas@overprimegroup.com";
+$remitente    ="reservas@codrise.com";
 $asunto       = "Lista de Compra"; 
 $cuerpo =' 
 <html> 
