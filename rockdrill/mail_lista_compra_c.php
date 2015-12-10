@@ -68,6 +68,6 @@ $headers .= "Cc: luis.claudio@overprimegroup.com\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.8/rockdrill/reserva/pages/reserva-kit?tipo='.$_GET[tipo].'&msj='.'ok')
+header('Location: http://192.168.1.7/rockdrill/reserva/pages/reserva-kit?tipo='.$_GET[tipo].'&msj='.'ok')
 
 ?>
