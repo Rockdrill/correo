@@ -77,7 +77,8 @@ header('Location: http://192.168.1.8/reserva/consulta/carga-excel?msj='.'ok');
 
 else
 {
-  echo "no esta definida";
+  header('Location: http://www.incomica.com/wp-content/uploads/2014/01/no-existe-el-infierno.jpg');
+
 }
 
 
