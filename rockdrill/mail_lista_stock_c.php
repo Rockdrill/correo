@@ -73,7 +73,7 @@ header('Location: http://192.168.1.7/rockdrill/reserva/consulta/carga-excel?msj=
 }
 else
 {
-  echo "no esta definida :p";
+   header('Location: http://www.incomica.com/wp-content/uploads/2014/01/no-existe-el-infierno.jpg');
 }
 
 
