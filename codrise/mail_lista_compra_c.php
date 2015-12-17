@@ -1,4 +1,8 @@
 <?php 
+
+if (isset($_GET['usuario']) and isset($_GET['tipo'])) 
+{
+  
 $destinatario ="manuel.matos@codrise.com";
 $remitente    ="reservas@codrise.com";
 $asunto       = "Lista de Compra"; 
@@ -69,6 +73,17 @@ $headers .= "Cc: luis.claudio@codrise.com\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.8/reserva/pages/reserva-kit?tipo='.$_GET[tipo].'&msj='.'ok')
+header('Location: http://192.168.1.8/reserva/pages/reserva-kit?tipo='.$_GET[tipo].'&msj='.'ok');
+}
+
+else
+{
+  header('Location: http://www.incomica.com/wp-content/uploads/2014/01/no-existe-el-infierno.jpg');
+}
+
+
+
+
+
 
 ?>

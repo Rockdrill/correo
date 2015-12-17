@@ -1,4 +1,8 @@
-<?php 
+<?php
+
+if (isset($_GET['usuario'])) 
+{
+  
 $destinatario ="manuel.matos@codrise.com";
 $remitente    ="reservas@codrise.com";
 $asunto       = "Lista de Compra"; 
@@ -68,6 +72,17 @@ $headers .= "Cc: luis.claudio@codrise.com\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.8/reserva/consulta/carga-excel?msj='.'ok')
+header('Location: http://192.168.1.8/reserva/consulta/carga-excel?msj='.'ok');
+}
+
+else
+{
+  echo "no esta definida";
+}
+
+
+
+
+
 
 ?>
