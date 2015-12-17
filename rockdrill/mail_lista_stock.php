@@ -38,13 +38,15 @@ border-radius: 5px;
 
 <p> 
 <b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra,con articulos que
-no tienen Stock,para poder  consultar la información generada puede acceder al 
-Integrador de Aplicaciones/Inventarios/Administrador Modulo de Reserva.
+no tienen Stock,para poder  consultar la información generada puede acceder a  la ruta
+http://192.168.1.7/rockdrill/adm-reserva/.
 </p> 
 
+<hr>
 <p>Adm. Reservas Rockdrill</p>
 <p>Slds Coordiales</p>
 
+<hr>
 </body> 
 </html> 
 '; 
