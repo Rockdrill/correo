@@ -1,6 +1,5 @@
 <?php 
-
-if (isset($_GET['usuario']) and isset($_GET['tipo'])) 
+if (isset($_GET['usuario'])) 
 {
   
 $destinatario ="luis.claudio@rockdrillgroup.com";
@@ -35,12 +34,17 @@ border-radius: 5px;
 
 </head> 
 <body> 
-<h1>Lista de Compra Nueva - Modulo de Reservas Rockdrill</h1> 
+<h1>Lista de Compra Nueva(Stock) - Modulo de Reservas Rockdrill</h1> 
 
 <p> 
-<b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra.
+<b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra,con articulos que
+no tienen Stock,para poder  consultar la información generada puede acceder al 
+Integrador de Aplicaciones/Inventarios/Administrador Modulo de Reserva.
 </p> 
-<p><a href="http://192.168.1.7/rockdrill/reserva/pdf/lista-de-compras" target="_blank" class="enlaceboton">Descargar Lista</a></p>
+
+<p>Adm. Reservas Rockdrill</p>
+<p>Slds Coordiales</p>
+
 </body> 
 </html> 
 '; 
@@ -64,24 +68,18 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 
 //direcciones que recibión copia 
 $headers .= "Cc: luis.claudio@overprimegroup.com\r\n";
-//$headers .= "Cc: martha.peralta@codrise.com\r\n";
-//$headers .= "Cc: elvis.janampa@codrise.com\r\n"; 
 
 //direcciones que recibirón copia oculta 
 //$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.7/rockdrill/reserva/pages/reserva-kit?tipo='.$_GET[tipo].'&msj='.'ok');
+header('Location: http://192.168.1.8/rockdrill/reserva/consulta/carga-excel?msj='.'ok');
 }
-
 else
 {
-   header('Location: http://www.incomica.com/wp-content/uploads/2014/01/no-existe-el-infierno.jpg');
+  header('Location: http://www.incomica.com/wp-content/uploads/2014/01/no-existe-el-infierno.jpg');
 }
-
-
-
 
 
 

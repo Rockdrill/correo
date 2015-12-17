@@ -37,9 +37,14 @@ border-radius: 5px;
 <h1>Lista de Compra Nueva(Stock) - Modulo de Reservas Rockdrill</h1> 
 
 <p> 
-<b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra.
+<b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra,con articulos que
+no tienen Stock,para poder  consultar la información generada puede acceder al 
+Integrador de Aplicaciones/Inventarios/Administrador Modulo de Reserva.
 </p> 
-<p><a href="http://192.168.1.8/rockdrill/reserva/pdf/lista-de-compras" target="_blank" class="enlaceboton">Descargar Lista</a></p>
+
+<p>Adm. Reservas Rockdrill</p>
+<p>Slds Coordiales</p>
+
 </body> 
 </html> 
 '; 

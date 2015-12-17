@@ -69,7 +69,7 @@ $headers .= "Cc: luis.claudio@overprimegroup.com\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.7/rockdrill/reserva/consulta/carga-excel?msj='.'ok');
+header('Location: http://192.168.1.8/rockdrill/reserva/consulta/carga-excel?msj='.'ok');
 }
 else
 {
