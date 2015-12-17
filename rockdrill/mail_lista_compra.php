@@ -31,7 +31,7 @@ border-radius: 5px;
 
 </head> 
 <body> 
-<h1>Lista de Compra Nueva - Modulo de Reservas Codrise</h1> 
+<h1>Lista de Compra Nueva - Modulo de Reservas Rockdrill</h1> 
 
 <p> 
 <b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra.

@@ -1,4 +1,7 @@
 <?php 
+if (isset($_GET['usuario'])) 
+{
+  
 $destinatario ="luis.claudio@rockdrillgroup.com";
 $remitente    ="reservas@rockdrillgroup.com";
 $asunto       = "Lista de Compra"; 
@@ -31,7 +34,7 @@ border-radius: 5px;
 
 </head> 
 <body> 
-<h1>Lista de Compra Nueva - Modulo de Reservas Codrise</h1> 
+<h1>Lista de Compra Nueva(Stock) - Modulo de Reservas Rockdrill</h1> 
 
 <p> 
 <b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra.
@@ -67,5 +70,12 @@ $headers .= "Cc: luis.claudio@overprimegroup.com\r\n";
 mail($destinatario,$asunto,$cuerpo,$headers);
 
 header('Location: http://192.168.1.7/rockdrill/reserva/consulta/carga-excel?msj='.'ok')
+}
+else
+{
+  echo "no esta definida :p";
+}
+
+
 
 ?>
