@@ -1,4 +1,8 @@
 <?php 
+
+if (isset($_GET['usuario']) and isset($_GET['tipo'])) 
+{
+  
 $destinatario ="luis.claudio@rockdrillgroup.com";
 $remitente    ="reservas@rockdrillgroup.com";
 $asunto       = "Lista de Compra"; 
@@ -36,7 +40,7 @@ border-radius: 5px;
 <p> 
 <b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra.
 </p> 
-<p><a href="http://192.168.1.8/rockdrill/reserva/pdf/lista-de-compras" target="_blank" class="enlaceboton">Descargar Lista</a></p>
+<p><a href="http://192.168.1.7/rockdrill/reserva/pdf/lista-de-compras" target="_blank" class="enlaceboton">Descargar Lista</a></p>
 </body> 
 </html> 
 '; 
@@ -68,6 +72,17 @@ $headers .= "Cc: luis.claudio@overprimegroup.com\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.7/rockdrill/reserva/pages/reserva-kit?tipo='.$_GET[tipo].'&msj='.'ok')
+header('Location: http://192.168.1.7/rockdrill/reserva/pages/reserva-kit?tipo='.$_GET[tipo].'&msj='.'ok');
+}
+
+else
+{
+  echo "no esta definida";
+}
+
+
+
+
+
 
 ?>
