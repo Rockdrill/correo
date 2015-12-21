@@ -70,6 +70,7 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 
 //direcciones que recibión copia 
 $headers .= "Cc: jose.peralta@rockdrillgroup.com\r\n";
+$headers .= "Cc: jorge.guillermo@rockdrillgroup.com\r\n";
 
 //direcciones que recibirón copia oculta 
 //$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
