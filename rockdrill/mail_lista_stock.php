@@ -34,19 +34,22 @@ border-radius: 5px;
 
 </head> 
 <body> 
+<b>
 <h1>Lista de Compra Nueva(Stock) - Modulo de Reservas Rockdrill</h1> 
-
 <p> 
-<b>El  Usuario '. $_GET[usuario].' acaba de generar una nueva lista de compra,con articulos que
+El  Usuario '. $_GET[usuario].'	 acaba de generar una nueva lista de compra,con articulos que
 no tienen Stock,para poder  consultar la información generada puede acceder a  la ruta
-http://192.168.1.7/rockdrill/adm-reserva/.
+<a href="http://192.168.1.7/rockdrill/adm-reserva/" 
+target="_blank">Administrador Modulo de Reservas</a> o descargar la lista del siguiente enlace:
 </p> 
+<p><a href="http://192.168.1.7/rockdrill/reserva/pdf/excel-lista-de-compra"
+target="_blank" class="enlaceboton">Descargar Lista</a></p>
+<hr>
+<p>@soporte_reservas</p>
+<p>Slds Coordiales.</p>
 
 <hr>
-<p>Adm. Reservas Rockdrill</p>
-<p>Slds Coordiales</p>
-
-<hr>
+</b>
 </body> 
 </html> 
 '; 
@@ -72,6 +75,7 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 $headers .= "Cc: jose.peralta@rockdrillgroup.com\r\n";
 $headers .= "Cc: jorge.guillermo@rockdrillgroup.com\r\n";
 $headers .= "Cc: luis.mayoria@rockdrillgroup.com\r\n";
+$headers .= "Cc: luis.claudio@rockdrillgroup.com\r\n";
 
 //direcciones que recibirón copia oculta 
 //$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
