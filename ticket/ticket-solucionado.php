@@ -9,29 +9,9 @@ $cuerpo ='
 <html> 
 <head> 
 <title>Ticket Solucionado</title>
-<style>
-.enlaceboton {    
-font-family: verdana, arial, sans-serif; 
-font-size: 12pt; 
-font-weight: bold; 
-padding: 10px; 
-background-color: #00AAFF; 
-color: #fff; 
-text-decoration: none; 
-} 
-.enlaceboton:link, 
-.enlaceboton:visited { 
-border-top: 1px solid #00AAFF; 
-border-bottom: 2px solid #00AAFF; 
-border-left: 1px solid #00AAFF; 
-border-right: 2px solid #00AAFF; 
-border-radius: 5px;
-} 
-
-
-
-</style>
-
+'.
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+.'
 </head> 
 <body> 
 <h1>Solución de Ticket N° '.$_GET[ticket].'</h1>
@@ -83,3 +63,4 @@ else
 
 
 ?>
+
