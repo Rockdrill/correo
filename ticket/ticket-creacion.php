@@ -4,25 +4,70 @@ if (isset($_GET['usuario']) AND isset($_GET['ticket']))
   
 $destinatario =$_GET['correousuario'];
 $remitente    =$_GET['correosoporte'];
-$asunto       = "Ticket Solucionado N°".$_GET['ticket']; 
+$asunto       = "Ticket Registrado N°".$_GET['ticket']; 
 $cuerpo =' 
-<html> 
-<head> 
-<title>Ticket Solucionado</title>
-</head> 
-<body> 
-<h1>Solución de Ticket N° '.$_GET[ticket].'</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ticket Registrado</title>
+<style>
+
+body{font-family: arial;   font-weight: bold;}
+
+th{	text-align: left;}
+</style>
+</head>
+<body>
+<h1>Registro de Ticket Exitoso</h1>
+<h2>Hola Luis Claudio acabas de registrar el ticket N°1234,
+con el siguiente detalle:</h2>
+
+<table border="1">
+	<thead>
+		<tr>
+			<th>N° de Ticket</th>
+			<th>'.$_GET[ticket].'</th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th>Usuario</th>
+			<th>'.$_GET[usuario].'</th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th>Empresa</th>
+			<th>'.$_GET[empresa].'</th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th>Tipo</th>
+			<th>Modulo de Reserva</th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th>Detalle</th>
+			<th>'.$_GET[detalle].'</th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th>Correo:</th>
+			<th>'.$_GET[correousuario].'</th>
+		</tr>
+	</thead>
+</table>
 <hr>
-Hola '.$_GET[usuario].', el ticket N° '.$_GET[ticket].'  con el detalle:
-<br>'.$_GET[detalle].'<br>
-Ha sido solucionado con el siguiente detalle:
+No estaremos contactando contigo en breves minutos.
 <br>
-'.$_GET[solucion].'
-<p>Favor de verificar la solución y confirmar por este medio.</p>
-<hr>
-Atentamente. <br> @soporte_'.$_GET[empresa].'
-</body> 
-</html> 
+Atentamente.
+<br>
+Área de TI
+</body>
+</html>
 '; 
 
 $headers .= 'From: '.$remitente."\r\n".
@@ -50,7 +95,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.7/sistemas/respuesta/correo-enviado');
+header('Location: http://localhost/correo/respuesta.php');
 }
 else
 {
