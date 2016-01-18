@@ -9,6 +9,7 @@ $cuerpo ='
 <html> 
 <head> 
 <title>Ticket Solucionado</title>
+<link rel="stylesheet" href="estilos.css">
 </head> 
 <body> 
 <h1>Solución de Ticket N° '.$_GET[ticket].'</h1>
