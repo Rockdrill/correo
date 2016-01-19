@@ -95,7 +95,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('http://192.168.1.8/ticket/pages/respuesta.php');
+header('Location: http://192.168.1.8/ticket/pages/respuesta.php');
 }
 else
 {
