@@ -19,7 +19,7 @@ th{	text-align: left;}
 </head>
 <body>
 <h1>Registro de Ticket Exitoso</h1>
-<h2>Hola Luis Claudio acabas de registrar el ticket N°1234,
+<h2>Hola Luis Claudio acabas de registrar el ticket '.$_GET[ticket].',
 con el siguiente detalle:</h2>
 
 <table border="1">
