@@ -55,7 +55,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.8/sistemas/consulta/seguimiento');
+header('Location: http://192.168.1.8/sistemas/consulta/asignar');
 }
 else
 {
