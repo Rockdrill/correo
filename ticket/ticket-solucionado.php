@@ -1,26 +1,26 @@
 <?php 
-if (isset($_GET['usuario']) AND isset($_GET['ticket'])) 
+if (isset($_REQUEST['usuario']) AND isset($_REQUEST['ticket'])) 
 {
   
-$destinatario =$_GET['correousuario'];
-$remitente    =$_GET['correosoporte'];
-$asunto       = "Ticket Solucionado N°".$_GET['ticket']; 
+$destinatario =$_REQUEST['correousuario'];
+$remitente    =$_REQUEST['correosoporte'];
+$asunto       = "Ticket Solucionado N°".$_REQUEST['ticket']; 
 $cuerpo =' 
 <html> 
 <head> 
-<title>Ticket Solucionado</title>
+<title>Ticket Solucionado N°'.$_REQUEST[ticket].'</title>
 </head> 
 <body> 
-<h1>Solución de Ticket N° '.$_GET[ticket].'</h1>
+<h1>Solución de Ticket N° '.$_REQUEST[ticket].'</h1>
 <hr>
-Hola '.$_GET[usuario].', el ticket N° '.$_GET[ticket].'  con el detalle:
-<br>'.$_GET[detalle].'<br>
+Hola '.$_REQUEST[usuario].', el ticket N° '.$_REQUEST[ticket].'  con el detalle:
+<br>'.$_REQUEST[detalle].'<br>
 Ha sido solucionado con el siguiente detalle:
 <br>
-'.$_GET[solucion].'
+'.$_REQUEST[solucion].'
 <p>Favor de verificar la solución y confirmar por este medio.</p>
 <hr>
-Atentamente. <br> @soporte_'.$_GET[empresa].'
+Atentamente. <br> @soporte_'.$_REQUEST[empresa].'
 </body> 
 </html> 
 '; 
@@ -43,14 +43,14 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 //$headers .= "Return-path: holahola@desarrolloweb.com\r\n"; 
 
 //direcciones que recibión copia 
-$headers .= "Cc: $_GET[correosoporte]\r\n";
+$headers .= "Cc: $_REQUEST[correosoporte]\r\n";
 
 //direcciones que recibirón copia oculta 
 //$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.7/sistemas/respuesta/correo-enviado');
+header('Location: http://localhost/sistemas/mensaje/correo-enviado');
 }
 else
 {
