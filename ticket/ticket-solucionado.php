@@ -50,7 +50,7 @@ $headers .= "Cc: $_REQUEST[correosoporte]\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://localhost/sistemas/mensaje/correo-enviado');
+header('Location: http://192.168.1.8/sistemas/mensaje/correo-enviado');
 }
 else
 {

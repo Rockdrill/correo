@@ -9,7 +9,7 @@ $cuerpo ='
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>Ticket Registrado</title>
+<title>Ticket Asignado</title>
 <style>
 
 body{font-family: arial;   font-weight: bold;}
@@ -18,50 +18,10 @@ th{	text-align: left;}
 </style>
 </head>
 <body>
-<h1>Registro de Ticket Exitoso</h1>
-<h2>Hola '.$_REQUEST[usuario].' acabas de registrar el ticket '.$_GET[ticket].',
-con el siguiente detalle:</h2>
-
-<table border="1">
-	<thead>
-		<tr>
-			<th>N° de Ticket</th>
-			<th>'.$_GET[ticket].'</th>
-		</tr>
-	</thead>
-	<thead>
-		<tr>
-			<th>Usuario</th>
-			<th>'.$_GET[usuario].'</th>
-		</tr>
-	</thead>
-	<thead>
-		<tr>
-			<th>Empresa</th>
-			<th>'.$_GET[empresa].'</th>
-		</tr>
-	</thead>
-	<thead>
-		<tr>
-			<th>Tipo</th>
-			<th>Modulo de Reserva</th>
-		</tr>
-	</thead>
-	<thead>
-		<tr>
-			<th>Detalle</th>
-			<th>'.$_GET[detalle].'</th>
-		</tr>
-	</thead>
-	<thead>
-		<tr>
-			<th>Correo:</th>
-			<th>'.$_GET[correousuario].'</th>
-		</tr>
-	</thead>
-</table>
-<hr>
-No estaremos contactando contigo en breves minutos.
+<h1>Asignación de Ticket</h1>
+<h2>Hola '.$_REQUEST[usuario].' el ticket '.$_GET[ticket].'
+fue asignado a '.$_REQUEST[usuariosporte].'
+Estara coordinando contigo la solución de tu inconveniente.
 <br>
 Atentamente.
 <br>
@@ -95,7 +55,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.8/ticket/pages/respuesta');
+header('Location: http://192.168.1.8/sistemas/consulta/seguimiento');
 }
 else
 {
