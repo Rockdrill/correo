@@ -19,10 +19,12 @@ th{	text-align: left;}
 </head>
 <body>
 <h1>Asignación de Ticket</h1>
+<hr>
 <h2>Hola '.$_REQUEST[usuario].' el ticket '.$_GET[ticket].'
-fue asignado a '.$_REQUEST[usuariosporte].'
-Estara coordinando contigo la solución de tu inconveniente.
+fue asignado a '.$_GET[usuariosoporte].'.
 <br>
+Estara coordinando contigo la solución de tu inconveniente.
+<hr>
 Atentamente.
 <br>
 Área de TI
