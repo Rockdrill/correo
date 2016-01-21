@@ -20,10 +20,10 @@ th{	text-align: left;}
 <body>
 <h1>Asignación de Ticket</h1>
 <hr>
-<h2>Hola '.$_REQUEST[usuario].' el ticket '.$_GET[ticket].'
+<h2>Hola '.$_REQUEST[usuario].' el ticket # '.$_GET[ticket].'
 fue asignado a '.$_GET[usuariosoporte].'.
 <br>
-Estara coordinando contigo la solución de tu inconveniente.
+Se contactara contigo para poder resolver el detalle de tu ticket generado.
 <hr>
 Atentamente.
 <br>
@@ -57,7 +57,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.8/sistemas/consulta/asignar');
+header('Location: http://192.168.1.8/sistemas/consulta/asignar?id=ok');
 }
 else
 {
