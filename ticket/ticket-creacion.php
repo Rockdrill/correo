@@ -94,7 +94,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 //direcciones que recibirón copia oculta 
 //$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
 
-mail($destinatario,$asunto,$cuerpo,$headers);
+mail($destinatario,utf8_encode($asunto),utf8_encode($cuerpo),$headers);
 
 header('Location: http://192.168.1.8/ticket/pages/respuesta');
 }
