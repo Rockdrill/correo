@@ -9,6 +9,7 @@ $cuerpo ='
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="UTF-8">
 <title>Ticket Registrado</title>
 <style>
 
@@ -61,7 +62,7 @@ con el siguiente detalle:</h2>
 	</thead>
 </table>
 <hr>
-No estaremos contactando contigo en breves minutos.
+Nos estaremos contactando contigo en breves minutos.
 <br>
 Atentamente.
 <br>
