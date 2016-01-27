@@ -6,8 +6,7 @@ $destinatario =$_GET['correousuario'];
 $remitente    =$_GET['correosoporte'];
 $asunto       = "Ticket Registrado N°".$_GET['ticket']; 
 $cuerpo =' 
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
 <title>Ticket Registrado</title>
 <style>
@@ -77,6 +76,7 @@ $headers .= 'From: '.$remitente."\r\n".
 //para el envío en formato HTML 
 $headers .= "MIME-Version: 1.0\r\n"; 
 $headers .= "Content-type: text/html; charset=UTF-8\r\n"; 
+
 //dirección del remitente 
 //$headers .= "From: Luis Claudio <luis.claudio@overprimegroup.com>\r\n"; 
 
@@ -92,7 +92,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 //direcciones que recibirón copia oculta 
 //$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
 
-mail($destinatario,utf8_decode($asunto),utf8_decode($cuerpo),$headers);
+mail($destinatario,$asunto,$cuerpo,$headers);
 
 header('Location: http://192.168.1.8/ticket/pages/respuesta');
 }

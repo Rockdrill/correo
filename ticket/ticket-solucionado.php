@@ -9,6 +9,11 @@ $cuerpo ='
 <html> 
 <head> 
 <title>Ticket Solucionado N°'.$_REQUEST[ticket].'</title>
+<style>
+
+body{font-family: arial;   font-weight: bold;}
+
+</style>
 </head> 
 <body> 
 <h1>Solución de Ticket N° '.$_REQUEST[ticket].'</h1>

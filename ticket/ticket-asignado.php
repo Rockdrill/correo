@@ -6,15 +6,13 @@ $destinatario =$_GET['correousuario'];
 $remitente    =$_GET['correosoporte'];
 $asunto       = "Ticket Asignado N°".$_GET['ticket']; 
 $cuerpo =' 
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
 <title>Ticket Asignado</title>
 <style>
 
 body{font-family: arial;   font-weight: bold;}
 
-th{	text-align: left;}
 </style>
 </head>
 <body>
