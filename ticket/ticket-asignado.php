@@ -16,7 +16,7 @@ body{font-family: arial;   font-weight: bold;}
 </style>
 </head>
 <body>
-<h1>Asignación de Ticket</h1>
+<h1>Asignación de Ticket # '.$_GET[ticket].'</h1>
 <hr>
 <h2>Hola '.$_REQUEST[usuario].' el ticket # '.$_GET[ticket].'
 fue asignado a '.$_GET[usuariosoporte].'.
@@ -30,7 +30,7 @@ Detalle de ticket:
 <hr>
 Atentamente.
 <br>
-Área de TI
+@soporte_ti
 </body>
 </html>
 '; 
