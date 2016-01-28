@@ -23,6 +23,11 @@ fue asignado a '.$_GET[usuariosoporte].'.
 <br>
 Se contactara contigo para poder resolver el detalle de tu ticket generado.
 <hr>
+Detalle de ticket:
+<br>
+'.$_REQUEST[detalleticket].'
+<br>
+<hr>
 Atentamente.
 <br>
 Área de TI
