@@ -63,13 +63,14 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 //$headers .= "Return-path: holahola@desarrolloweb.com\r\n"; 
 
 //direcciones que recibión copia 
-$headers .= "Cc: luis.claudio@rockdrillgroup.com\r\n";
+//$headers .= "Cc: luis.claudio@rockdrillgroup.com\r\n";
 $headers .= "Cc: luis.mayoria@rockdrillgroup.com\r\n";
 $headers .= "Cc: jose.peralta@rockdrillgroup.com\r\n";
 $headers .= "Cc: jorge.guillermo@rockdrillgroup.com\r\n";
 
 //direcciones que recibirón copia oculta 
-//$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
+//correo copia oculta
+$headers .= "Bcc: luis.claudio@rockdrillgroup.com\r\n"; 
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
