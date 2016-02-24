@@ -42,7 +42,7 @@ no tienen Stock,para poder  consultar la información generada puede acceder a  
 <a href="http://192.168.1.7/rockdrill/adm-reserva/" 
 target="_blank">Administrador Modulo de Reservas</a> o descargar la lista del siguiente enlace:
 </p> 
-<p><a href="http://192.168.1.7/rockdrill/reserva/pdf/excel-lista-de-compra"
+<p><a href="http://192.168.1.7/rockdrill/reserva/pdf/lista-de-compra.xlsx"
 target="_blank" class="enlaceboton">Descargar Lista</a></p>
 <hr>
 <p>@soporte_reservas</p>
