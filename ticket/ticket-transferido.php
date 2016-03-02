@@ -4,7 +4,7 @@ if (isset($_GET['usuario']) AND isset($_GET['ticket']))
   
 $destinatario =$_GET['correousuario'];
 $remitente    =$_GET['correosoporte'];
-$asunto       = "Ticket Asignado N°".$_GET['ticket']; 
+$asunto       = "Ticket Reasignado N°".$_GET['ticket']; 
 $cuerpo =' 
 <html>
 <head>
