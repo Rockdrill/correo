@@ -60,7 +60,7 @@ $headers .= "Cc: $_GET[correosoporte]\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.8/sistemas/consulta/asignar?id=ok');
+header('Location: http://192.168.1.8/sistemas/consulta/responsable?id=ok');
 }
 else
 {
