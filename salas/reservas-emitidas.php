@@ -14,8 +14,8 @@ body{font-family: arial;   font-weight: bold;}
 </style>
 </head>
 <body>
-<h2>Hola,este es un mensaje automatico del aplicativo
-de reservas de salas.</h2>
+<h2>Hola,este es un mensaje del aplicativo
+de reservas de salas,se genera automaticamente cuando hay reservas pendientes por aprobar.</h2>
 <h4>
 Actualmente eres el responsable de aprobar las salas reservadas.<br>
 Tienes que ingresar a este <a href="http://192.168.1.7/salas/">enlace</a>
