@@ -1,7 +1,7 @@
 <?php 
 
 $destinatario ="luis.claudio@rockdrillgroup.com";
-$remitente    = "reservarsalas@rockdrillgroup.com";
+$remitente    = "salas@rockdrillgroup.com";
 $asunto       = "Reservas Pendientes por aprobar"; 
 $cuerpo =' 
 <html>
@@ -14,12 +14,12 @@ body{font-family: arial;   font-weight: bold;}
 </style>
 </head>
 <body>
-Hola,este es un mensaje automatico.</br>
-Tienes reservas de salas emitidas por aprobar,favor 
-de ingresar al siguiente enlace para poder aprobrarlas.
-<a href="http://192.168.1.7/salas/">Reservar Salas</a>
+<h1>Hola,este es un mensaje automatico.</h1></br>
+Actualmente eres el responsable de aprobar las salas reservadas.<br>
+Tienes que ingresar al este <a href="http://192.168.1.7/salas/">enlace</a>
+e ir  a la pestaña administrador.
 <hr>
-Gracias por atender este mensaje.
+Gracias.
 </body>
 </html>
 '; 
