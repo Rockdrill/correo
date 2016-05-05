@@ -15,10 +15,10 @@ body{font-family: arial;   font-weight: bold;}
 </head>
 <body>
 <h2>Hola,este es un mensaje automatico del aplicativo
-de reservas de salas.</h2></br>
+de reservas de salas.</h2>
 <h4>
 Actualmente eres el responsable de aprobar las salas reservadas.<br>
-Tienes que ingresar al este <a href="http://192.168.1.7/salas/">enlace</a>
+Tienes que ingresar a este <a href="http://192.168.1.7/salas/">enlace</a>
 e ir  a la pestaña administrador.
 </h4>
 <hr>
