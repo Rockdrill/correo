@@ -16,13 +16,12 @@ body{font-family: arial;   font-weight: bold;}
 <body>
 <h2>Hola,este es un mensaje del aplicativo
 de reservas de salas,se genera automaticamente cuando hay reservas pendientes por aprobar.</h2>
-<h4>
-Actualmente eres el responsable de aprobar las salas reservadas.<br>
-Tienes que ingresar a este <a href="http://192.168.1.7/salas/">enlace</a>
-e ir  a la pestaña administrador.
-</h4>
+<h2>
+Para  poder aprobar  esas reservas  debes ingresar al siguiente
+<a href="http://192.168.1.7/salas">enlace</a> e ir a la pestaña administrador.
+</h2>
 <hr>
-Gracias.
+@admin_reservas
 </body>
 </html>
 '; 
