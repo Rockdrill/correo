@@ -53,9 +53,9 @@ mail($destinatario,$asunto,$cuerpo,$headers);
 
 //header('Location: http://192.168.1.8/sistemas/consulta/asignar?id=ok');
 
-echo "mensaje enviado";
+//echo "mensaje enviado";
 
-
+header('Location: http://192.168.1.7/salas/pages/mensaje');
 
 ?>
 
