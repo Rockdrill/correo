@@ -1,6 +1,6 @@
 <?php 
-$responsable="Flor";
-$destinatario ="luis.claudio@rockdrillgroup.com";
+$responsable="Flor Carranza";
+$destinatario ="info-peru@rockdrillgroup.com";
 $remitente    = "salas@rockdrillgroup.com";
 $asunto       = "Reservas Pendientes por aprobar"; 
 $cuerpo =' 
@@ -46,7 +46,7 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 //$headers .= "Cc: $_GET[correosoporte]\r\n";
 
 //direcciones que recibirón copia oculta 
-//$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
+$headers .= "Bcc: luis.claudio@rockdrillgroup.com\r\n"; 
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
