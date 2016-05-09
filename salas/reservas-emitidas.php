@@ -14,7 +14,7 @@ body{font-family: arial;   font-weight: bold;}
 </style>
 </head>
 <body>
-<h2>Hola '.$responsable.',se  ha generado una reserva.</h2>
+<h2>Hola '.$responsable.',se ha  reservado una nueva sala.</h2>
 <h2>
 Para  poder aprobar  esa nueva reserva, debes ingresar al siguiente
 <a href="http://192.168.1.7/salas">enlace</a> e ir a la pestaña administrador.
