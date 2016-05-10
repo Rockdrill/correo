@@ -2,13 +2,13 @@
 
 if (!$_GET['id']) 
 {
-echo "no hay datos";
+header('Location: https://i.ytimg.com/vi/Yis0hBj3RW4/maxresdefault.jpg');
 }
-else{
-
+else
+{
 
 $responsable="Flor Carranza";
-$destinatario ="luis.claudio@rockdrillgroup.com";
+$destinatario ="info-peru@rockdrillgroup.com";
 $remitente    = "salas@rockdrillgroup.com";
 $asunto       = "Reservas Pendientes por aprobar"; 
 $cuerpo =' 
