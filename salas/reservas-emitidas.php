@@ -1,6 +1,14 @@
-<?php 
+<?php
+
+if (!$_GET['id']) 
+{
+echo "no hay datos";
+}
+else{
+
+
 $responsable="Flor Carranza";
-$destinatario ="info-peru@rockdrillgroup.com";
+$destinatario ="luis.claudio@rockdrillgroup.com";
 $remitente    = "salas@rockdrillgroup.com";
 $asunto       = "Reservas Pendientes por aprobar"; 
 $cuerpo =' 
@@ -56,5 +64,6 @@ mail($destinatario,$asunto,$cuerpo,$headers);
 
 header('Location: http://192.168.1.7/salas/pages/mensaje');
 
+}
 ?>
 
