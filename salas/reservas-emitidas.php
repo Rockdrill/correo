@@ -8,7 +8,7 @@ else
 {
 
 $responsable="Flor Carranza";
-$destinatario ="luis.claudio@rockdrillgroup.com";
+$destinatario ="info-peru@rockdrillgroup.com";
 $remitente    = "salas@rockdrillgroup.com";
 $asunto       = "Reservas Pendientes por aprobar"; 
 $cuerpo =' 
