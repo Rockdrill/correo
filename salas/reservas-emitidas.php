@@ -1,6 +1,6 @@
 <?php
 
-if (!$_GET['id']) 
+if (!$_GET['fecha']) 
 {
 header('Location: https://i.ytimg.com/vi/Yis0hBj3RW4/maxresdefault.jpg');
 }
@@ -8,7 +8,7 @@ else
 {
 
 $responsable="Flor Carranza";
-$destinatario ="info-peru@rockdrillgroup.com";
+$destinatario ="luis.claudio@rockdrillgroup.com";
 $remitente    = "salas@rockdrillgroup.com";
 $asunto       = "Reservas Pendientes por aprobar"; 
 $cuerpo =' 
@@ -24,8 +24,11 @@ body{font-family: arial;   font-weight: bold;}
 <body>
 <h2>Hola '.$responsable.',se ha  reservado una nueva sala.</h2>
 <h2>
+<p>La fecha de reserva es '.$_GET[fecha].'</p>
+<p>
 Para  poder aprobar  esa nueva reserva, debes ingresar al siguiente
 <a href="http://192.168.1.7/salas">enlace</a> e ir a la pestaña administrador.
+</p>
 </h2>
 <hr>
 @admin_reservas
