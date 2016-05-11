@@ -24,9 +24,9 @@ body{font-family: arial;   font-weight: bold;}
 <body>
 <h2>Hola '.$responsable.',se ha  reservado una nueva sala.</h2>
 <h2>
-<p>La fecha de reserva es '.$_GET[fecha].'</p>
+<p>-La fecha de reserva es el  '.$_GET[fecha].' y la Sala # '.$_GET[sala].'.
 <p>
-Para  poder aprobar  esa nueva reserva, debes ingresar al siguiente
+-Para  poder aprobar  esa nueva reserva, debes ingresar al siguiente
 <a href="http://192.168.1.7/salas">enlace</a> e ir a la pestaña administrador.
 </p>
 </h2>
