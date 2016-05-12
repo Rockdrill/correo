@@ -14,13 +14,13 @@
 <form action="ticket-habilitado.php" method="POST">
 <div class="form-group">
 <label for="">Usuario</label>
-<input type="text" name="usuario" required="">
+<input type="text" name="usuario" class="form-control" required="">
 </div>
 
 
 <div class="form-group">
 <label for="">Correo usuario</label>
-<input type="email" name="correo" id="" value="@rockdrillgroup.com" required="">
+<input type="email" name="correo" class="form-control" value="@rockdrillgroup.com" required="">
 </div>
 
 <button  class="btn btn-primary">Habilitar</button>
