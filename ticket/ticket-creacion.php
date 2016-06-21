@@ -43,7 +43,7 @@ con el siguiente detalle:</h2>
 	<thead>
 		<tr>
 			<th>Tipo</th>
-			<th>Modulo de Reserva</th>
+			<th>'.$_GET[actividad].'</th>
 		</tr>
 	</thead>
 	<thead>
