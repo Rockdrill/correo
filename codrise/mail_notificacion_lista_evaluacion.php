@@ -2,8 +2,8 @@
 if (isset($_POST['remitente'])) 
 {
   
-$destinatario ="luis@codrise.com";
-$remitente    ="luis@codrise.com";
+$destinatario ="luis.claudio@codrise.com";
+$remitente    ="luis.claudio@codrise.com";
 $asunto       = "Lista de Evaluación"; 
 $cuerpo =' 
 <html> 
