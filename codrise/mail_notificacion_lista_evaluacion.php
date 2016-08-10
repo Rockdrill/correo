@@ -2,8 +2,8 @@
 if (isset($_POST['remitente'])) 
 {
   
-$destinatario = $_POST['remitente'];
-$remitente    = $_POST['destinatario'];
+$destinatario = $_POST['destinatario'];
+$remitente    = $_POST['remitente'];
 $asunto       = "Lista de Evaluación"; 
 $cuerpo =' 
 <html> 
