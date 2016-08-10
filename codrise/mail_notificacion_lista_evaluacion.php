@@ -47,7 +47,7 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
-header('Location: http://192.168.1.7/pedido/pages/detalle-lista-evaluacion?id=1');
+header('Location: http://192.168.1.7/pedido/pages/detalle-lista-evaluacion?id='.$_POST['id']);
 }
 
 else
