@@ -57,7 +57,7 @@ $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 //$headers .= "Cc: $_GET[correosoporte]\r\n";
 
 //direcciones que recibirón copia oculta 
-$headers .= "Bcc: luis.claudio@rockdrillgroup.com\r\n"; 
+//$headers .= "Bcc: luis.claudio@rockdrillgroup.com\r\n"; 
 
 mail($destinatario,$asunto,$cuerpo,$headers);
 
