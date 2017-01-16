@@ -1,6 +1,6 @@
 <?php 
 
-if (isset($_POST['usuario']) and isset($_POST['email']) and isset($_POST['path'])) 
+if (isset($_POST['mensaje']) and isset($_POST['email']) and isset($_POST['path'])) 
 {
  
 $destinatario = $_POST['email'];
